@@ -1,41 +1,26 @@
 package com.qawale;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class Board {
-    private String[][] grid;
-    private final int rows;
-    private final int cols;
+    private Case[][] grid;
 
     public Board(int rows, int cols) {
-        this.rows = rows;
-        this.cols = cols;
-        grid = new String[rows][cols];
-        for (String[] row : grid) {
-            Arrays.fill(row, ".");
-        }
+        grid = new Case[rows][cols];
     }
 
-    public boolean isMoveValid(int row, int col) {
-        return row >= 0 && row < rows && col >= 0 && col < cols && grid[row][col].equals(".");
+    public boolean placeStone(int row, int col, Stone stone, Player player) {
+        // Mocked method
+        return true;
     }
 
-    public void placePiece(int row, int col, String player) {
-        if (isMoveValid(row, col)) {
-            grid[row][col] = player;
-        } else {
-            throw new IllegalArgumentException("Invalid move!");
-        }
+    public boolean moveCurrentStone(int row, int col, Player player) {
+        // Mocked method
+        return true;
     }
 
-    public String[][] getGrid() {
-        return grid;
-    }
-
-    public void printBoard() {
-        for (String[] row : grid) {
-            System.out.println(String.join(" ", row));
-        }
+    public Player checkWinningCondition() {
+        // Mocked method
+        return null;
     }
 }
-

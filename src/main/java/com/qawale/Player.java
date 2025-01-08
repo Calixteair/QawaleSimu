@@ -1,19 +1,19 @@
 package com.qawale;
 
 public class Player {
-    private final String name;
-    private final String symbol;
+    private String name;
+    private String type;
 
-    public Player(String name, String symbol) {
+    public Player(String name, String type) {
         this.name = name;
-        this.symbol = symbol;
+        this.type = type;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getSymbol() {
-        return symbol;
+    public String getType() {
+        return type;
     }
 }
