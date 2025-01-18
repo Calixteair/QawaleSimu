@@ -4,6 +4,8 @@ public class Game {
     private Board board;
     private Player player1;
     private Player player2;
+    private Stone currentStone;
+    private Player currentPlayer;
 
     public Game(Board board, Player player1, Player player2) {
         this.board = board;
@@ -21,8 +23,16 @@ public class Game {
         return true;
     }
 
-    public Player checkWinner() {
-        // Mocked method
-        return null;
+    public boolean isPat(){
+        return true;
     }
+
+    public Stone getCurrentStone() {
+        return currentStone;
+    }
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
 }

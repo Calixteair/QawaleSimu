@@ -10,4 +10,8 @@ public class Case {
     public Case() {
         stones = new ArrayList<>();
     }
+
+    public boolean isEmpty() {
+        return stones.isEmpty();
+    }
 }

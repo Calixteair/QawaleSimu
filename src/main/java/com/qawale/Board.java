@@ -23,4 +23,16 @@ public class Board {
         // Mocked method
         return null;
     }
+
+    public Boolean aWin(Player player){
+        return null;
+    }
+
+    public Boolean isFull(){
+        return null;
+    }
+
+    public Case getCase(int row, int col) {
+       return null;
+    }
 }
